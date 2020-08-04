@@ -20,8 +20,8 @@
   {{/each}}
 </ul> --}}
 
-<h2>Add a birthday</h2>
-{{!-- <form class="create-form">
+{{!-- <h2>Add a birthday</h2>
+<form class="create-form">
   <div class="form-group">
     <label for="exampleFormControlInput1">Day</label>
     <input type="text" class="form-control" id="day" placeholder="1">
@@ -48,5 +48,30 @@
     <input type="text" class="form-control" id="year" placeholder="1995">
   </div> --}}
 
-  {{!-- <button type="submit">Add Cat</button> --}}
-{{!-- </form> --}}
+  {{!-- <button type="submit">Add Cat</button>
+</form> --}} 
+<div class="bootstrap-iso">
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col-md-6 col-sm-6 col-xs-12">
+
+    <!-- Form code begins -->
+    <form method="post" class="info">
+      <div class="form-group"> <!-- Date input -->
+        <label class="control-label" for="date">Name</label>
+        <input class="form-control" id="date" name="date" type="text"/>
+      </div>
+      <div class="form-group"> <!-- Date input -->
+        <label class="control-label" for="date">Date of Birth</label>
+        <input class="form-control" id="date" name="date" placeholder="YYYY-MM-DD" type="text"/>
+      </div>
+      <div class="form-group"> <!-- Submit button -->
+        <button class="btn btn-primary " name="submit" type="submit">Submit</button>
+      </div>
+     </form>
+     <!-- Form code ends --> 
+
+    </div>
+  </div>    
+ </div>
+</div>
