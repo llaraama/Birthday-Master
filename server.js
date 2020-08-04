@@ -23,7 +23,7 @@ app.use(passport.session());
 // Requiring our routes
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
-require("./routes/handlebar-routes.js")(app)
+
 
 // Set Handlebars.
 var exphbs = require("express-handlebars");
