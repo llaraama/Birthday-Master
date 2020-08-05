@@ -20,36 +20,6 @@
   {{/each}}
 </ul> --}}
 
-{{!-- <h2>Add a birthday</h2>
-<form class="create-form">
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Day</label>
-    <input type="text" class="form-control" id="day" placeholder="1">
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlSelect1">Month</label>
-    <select class="form-control" id="month">
-      <option>January</option>
-      <option>February</option>
-      <option>March</option>
-      <option>April</option>
-      <option>May</option>
-      <option>June</option>
-      <option>July</option>
-      <option>August</option>
-      <option>September</option>
-      <option>October</option>
-      <option>November</option>
-      <option>December</option>
-    </select>
-  </div>
-   <div class="form-group">
-    <label for="exampleFormControlInput1">Year</label>
-    <input type="text" class="form-control" id="year" placeholder="1995">
-  </div> --}}
-
-  {{!-- <button type="submit">Add Cat</button>
-</form> --}} 
 <div class="bootstrap-iso">
  <div class="container-fluid">
   <div class="row">
@@ -58,15 +28,23 @@
     <!-- Form code begins -->
     <form method="post" class="info">
       <div class="form-group"> <!-- Date input -->
-        <label class="control-label" for="date">Name</label>
-        <input class="form-control" id="date" name="date" type="text"/>
+        <label class="control-label" for="date">First Name</label>
+        <input class="form-control" id="fname" name="date" type="text"/>
+      </div>
+      <div class="form-group"> <!-- Date input -->
+        <label class="control-label" for="date">Last Name</label>
+        <input class="form-control" id="lname" name="date" type="text"/>
       </div>
       <div class="form-group"> <!-- Date input -->
         <label class="control-label" for="date">Date of Birth</label>
         <input class="form-control" id="date" name="date" placeholder="YYYY-MM-DD" type="text"/>
       </div>
+      <div class="form-group"> <!-- Date input -->
+        <label class="control-label" for="date">Last Year's Gift</label>
+        <input class="form-control" id="gift" name="date" type="text"/>
+      </div>
       <div class="form-group"> <!-- Submit button -->
-        <button class="btn btn-primary " name="submit" type="submit">Submit</button>
+        <button class="btn btn-primary " name="submit" id="formSubmit" type="submit">Submit</button>
       </div>
      </form>
      <!-- Form code ends --> 
@@ -75,3 +53,4 @@
   </div>    
  </div>
 </div>
+<script type="text/javascript" src="/js/birthday.js"></script>

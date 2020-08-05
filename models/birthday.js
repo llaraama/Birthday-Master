@@ -1,9 +1,13 @@
 module.exports = function(sequelize, DataTypes) {
     var Birthday = sequelize.define("birthday", {
 
-      name:{
+      firstname:{
           type: DataTypes.STRING,
           allowNull: false,
+      },
+      lastname:{
+        type: DataTypes.STRING,
+        allowNull: false,
       },
       date:{
           type: DataTypes.DATE,
@@ -11,7 +15,11 @@ module.exports = function(sequelize, DataTypes) {
           validate: {
             len: [1]
           }
-      }
+      },
+      gift:{
+        type: DataTypes.STRING,
+        allowNull: true,
+    }
 
     });
   
