@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Mobiscroll</title>
+    <script>
+        // Ignore this in your implementation
+        window.isMbscDemo = true;
+    </script>
+    <link href="css/mobiscroll.jquery.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-page" mbsc-enhance style="display:none;">
+        <div id="tab-home" class="app-tab app-tab-active app-tab-home">
+            <div class="app-header">
+                <h1>Home</h1>
+            </div>
+            <label>
+                Date
+                <input mbsc-input id="home-calendar">
+            </label>
+            <div class="mbsc-divider">Todo List</div>
+            <ul id="home-todo" class="app-todo" style="display:none" mbsc-enhance>
+                <li>
+                    <input mbsc-checkbox type="checkbox" checked>Do the laundry
+                </li>
+                <li>
+                    <input mbsc-checkbox type="checkbox" checked>Don't forget mom's birthday!
+                </li>
+                <li>
+                    <input mbsc-checkbox type="checkbox">Buy new shoes
+                </li>
+                <li>
+                    <input mbsc-checkbox type="checkbox">Need ketchup for pizza
+                </li>
+            </ul>
+        </div>
+        <div id="tab-settings" class="app-tab">
+            <div class="app-header">
+                <h1>Settings</h1>
+            </div>
+            <div class="mbsc-form-group">
+                <div class="mbsc-form-group-title">Sound</div>
+                <label>
+                    Ring
+                    <input mbsc-slider type="range" data-icon="phone" value="100">
+                </label>
+                <label>
+                    Media
+                    <input mbsc-slider type="range" data-icon="music" value="60">
+                </label>
+                <label>
+                    Alarm
+                    <input mbsc-slider type="range" data-icon="alarm2" value="80">
+                </label>
+            </div>
+            <div class="mbsc-form-group">
+                <div class="mbsc-form-group-title">Notifications</div>
+                <label>
+                    Enable notifications
+                    <span class="mbsc-desc">Allow notifications on this device</span>
+                    <input mbsc-switch id="settings-notify" type="checkbox" data-role="switch" checked>
+                </label>
+                <label>
+                    Message
+                    <span class="mbsc-desc">Get notifications when someone sends you a message</span>
+                    <input mbsc-switch class="settings-notify" type="checkbox" data-role="switch" checked>
+                </label>
+                <label>
+                    Birthdays
+                    <span class="mbsc-desc">Get notifications about your friends' birthdays</span>
+                    <input mbsc-switch class="settings-notify" type="checkbox" data-role="switch" checked>
+                </label>
+                <label>
+                    Tags
+                    <span class="mbsc-desc">Get notifications when you're tagged</span>
+                    <input mbsc-switch class="settings-notify" type="checkbox" data-role="switch" checked>
+                </label>
+            </div>
+            <div class="mbsc-form-group">
+                <div class="mbsc-form-group-title">Security</div>
+                <label>
+                    Set PIN
+                    <input mbsc-input id="settings-pin" type="password">
+                </label>
+            </div>
+        </div>
+        <div id="tab-profile" class="app-tab">
+            <div class="app-header">
+                <h1>Profile</h1>
+            </div>
+            <div class="mbsc-form-group">
+                <div class="mbsc-form-group-title">Personal Data</div>
+                <label>
+                    First Name
+                    <input mbsc-input value="Angelica">
+                </label>
+                <label>
+                    Last Name
+                    <input mbsc-input value="Geary">
+                </label>
+                <label>
+                    Language
+                    <select mbsc-dropdown id="profile-language">
+                        <option value="de">Deutsch</option>
+                        <option value="en" selected>English</option>
+                        <option value="es">Espa&#241;ol</option>
+                        <option value="fr">Fran&#231;ais</option>
+                        <option value="it">Italiano</option>
+                    </select>
+                </label>
+                <label>
+                    Birthday
+                    <input mbsc-input id="profile-birthday" value="03/25/1987">
+                </label>
+                <label>
+                    Male
+                    <input mbsc-segmented type="radio" data-role="segmented" name="gender">
+                </label>
+                <label>
+                    Female
+                    <input mbsc-segmented type="radio" data-role="segmented" name="gender" checked>
+                </label>
+            </div>
+            <div class="mbsc-form-group">
+                <div class="mbsc-form-group-title">Account</div>
+                <label>
+                    Email
+                    <input mbsc-input type="email" value="angelica.geary@gmail.com">
+                </label>
+                <label>
+                    Password
+                    <input mbsc-input type="password" data-password-toggle="true">
+                </label>
+            </div>
+            <div class="mbsc-padding">
+                <button mbsc-button class="mbsc-btn-block">Save</button>
+            </div>
+        </div>
+        <ul id="tabs">
+            <li data-tab="home" data-icon="home" data-selected="true">Home</li>
+            <li data-tab="settings" data-icon="cogs">Settings</li>
+            <li data-tab="profile" data-icon="user4">Profile</li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/mobiscroll.jquery.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
