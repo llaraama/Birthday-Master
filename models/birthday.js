@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false,
       },
       date:{
-          type: DataTypes.DATE,
+          type: DataTypes.STRING,
           allowNull: false,
           validate: {
             len: [1]

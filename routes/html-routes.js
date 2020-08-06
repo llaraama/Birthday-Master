@@ -14,7 +14,7 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
 
-  app.get("/calendar", function(req, res) {
+  app.get("/calendar",isAuthenticated, function(req, res) {
     console.log(db)
     db.birthday.findAll({
     }).then(function(hbsObject) {

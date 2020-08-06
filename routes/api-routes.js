@@ -53,7 +53,7 @@ module.exports = function(app) {
 
 
   app.post("/api/birthday", (req, res) => {
-    console.log(req.body)
+   
     db.birthday.create({
       firstname:req.body.firstname,
       lastname:req.body.lastname,
@@ -61,12 +61,7 @@ module.exports = function(app) {
       gift: req.body.gift
     
     })
-      .then(() => {
-        res.redirect(307, "/api/login");
-      })
-      .catch(err => {
-        res.status(401).json(err);
-      });
+
   });
 
 

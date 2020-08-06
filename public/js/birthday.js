@@ -20,7 +20,7 @@ birthdayForm.on("submit",event=>{
         gift:giftInput.val().trim()
     };
     console.log("it is here!")
-    console.log(birthdayData)
+    // console.log(birthdayData)
     if (!birthdayData.firstname || !birthdayData.lastname || !birthdayData.date || !birthdayData.gift) {
         return;
       }
@@ -29,7 +29,7 @@ birthdayForm.on("submit",event=>{
 
     
     function addBirthday(firstname,lastname,date,gift) {
-        console.log(firstname,lastname,date,gift)
+    
         $.post("/api/birthday", {
             firstname:firstname,
             lastname:lastname,
