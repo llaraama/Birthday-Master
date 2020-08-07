@@ -6,14 +6,12 @@ form.login {
 }
 
 body {
-    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 background-attachment: fixed;
-  background-repeat: no-repeat;
-
-    font-family: 'Vibur', cursive;
-/*   the main font */
-    font-family: 'Abel', sans-serif;
+background-repeat: no-repeat;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto Slab', serif;
 opacity: .95;
 /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
 }
@@ -46,13 +44,17 @@ form .con {
 header {
     margin: 2% auto 10% auto;
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 /* Login title form form */
 header h2 {
     font-size: 250%;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Slab', serif;
     color: #3e403f;
 }
+
 /*  A welcome message or an explanation of the login form */
 header p {letter-spacing: 0.05em;}
 
@@ -62,6 +64,7 @@ header p {letter-spacing: 0.05em;}
     color: #333;
     padding: 14.5px 0px 15px 9px;
     border-radius: 5px 0px 0px 5px;
+    font-family: 'Roboto Slab', serif;
 }
 
 
@@ -69,7 +72,6 @@ header p {letter-spacing: 0.05em;}
 #eye {
     background: #fff;
     color: #333;
-  
     margin: 5.9px 0 0 0;
     margin-left: -20px;
     padding: 15px 9px 19px 0px;
@@ -92,7 +94,8 @@ input[class="form-input"]{
     padding: 15px;
     
     font-size: 16px;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto Slab', serif;
     color: #5E6472;
   
     outline: none;
