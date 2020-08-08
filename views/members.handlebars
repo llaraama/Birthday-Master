@@ -27,6 +27,11 @@
     </div>
   </div>
 
+  {{#each animals}}
+<li>{{this.animalType}}</li>
+{{log this.animalType}}
+  {{/each}}
+
   <div class="jumbotron">
     <h1 class="display-4">Birthday Tracker</h1>
     <p class="lead">View birthdays by month.</p>
@@ -38,7 +43,7 @@
       <button class="tablinks nav-link" value="2">February</button>
       <button class="tablinks nav-link" value="3">March</button>
       <button class="tablinks nav-link" value="4">April</button>
-      <button class="tablinks nav-link" value="6">May</button>
+      <button class="tablinks nav-link" value="5">May</button>
       <button class="tablinks nav-link" value="6">June</button>
       <button class="tablinks nav-link" value="7">July</button>
       <button class="tablinks nav-link" value="8">August</button>
@@ -54,14 +59,16 @@
     <div class="col-sm-8">
         <div class="card border-info mb-3 hide">
             <div class="card-header" id="monthTitle"></div>
-            <div class="card-body text-info"></div>
+            <div class="card-body text-info">
+              
+            </div>
           </div>
     </div>
     <div class="col-sm-2"></div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/members.js"></script>
+<script type="text/javascript" src="/js/members.js"></script>
 
 </body>
 
