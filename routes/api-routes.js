@@ -81,11 +81,12 @@ module.exports = function(app) {
 
 
   app.post("/api/birthday/:month", (req, res) => {
+    console.log("on the backend")
     db.birthday.findAll({
 
       where: sequelize.where(sequelize.fn("month", sequelize.col("date")), req.params.month)
       
-    }).then(res => console.log(res)) 
+    }).then(response =>{ res.json(response)}) 
   });
 
 };
