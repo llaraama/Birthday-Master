@@ -49,14 +49,24 @@ module.exports = function(app) {
     // var bdays = [];
     // bdays.push(response);
     let months = {
-      1: "january",
+      1: "January",
       2: "February",
+      3: "March",
+      4: "April",
+      5: "May",
+      6: "June",
+      7: "July",
+      8: "August",
+      9: "September",
+      10: "October",
+      11: "November",
       12: "December"
     }
     let hbsObj = {
       data: response.map(bday => {return {firstname: bday.firstname, lastname:bday.lastname, date: bday.date}}),
       displayBirthdays: response.length ? true: false,
-      month: months[req.params.month]
+      month: months[req.params.month],
+      day: req.params.day
     }
     console.log(hbsObj)
     res.render("members", hbsObj);
