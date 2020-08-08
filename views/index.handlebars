@@ -1,24 +1,4 @@
-{{!-- <h1>Cats!</h1>
 
-<h2>Cats that are not sleepy!</h2>
-
-<ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Cats that are sleepy!</h2>
-
-<ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
-    {{/if}}
-  {{/each}}
-</ul> --}}
 <div class="bootstrap-iso">
     <div class="jumbotron">
         <h1 class="display-4">Birthday Tracker</h1>
@@ -31,7 +11,7 @@
    <div class="col-md-6 col-sm-6 col-xs-12">
 
     <!-- Form code begins -->
-    <form method="post" class="info">
+    <form action="/api/birthday" method="post" class="info">
       <div class="form-group"> <!-- Date input -->
         <label class="control-label" for="date">First Name</label>
         <input class="form-control" id="fname" name="date" type="text"/>

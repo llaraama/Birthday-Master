@@ -2,6 +2,8 @@
 const db = require("../models");
 const passport = require("../config/passport");
 const sequelize = require("sequelize");
+const isAuthenticated = require("../config/middleware/isAuthenticated");
+
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
@@ -37,6 +39,12 @@ module.exports = function(app) {
     res.redirect("/");
   });
 
+  app.get("/birthday-input",isAuthenticated,  (req, res) => {
+    console.log(req.user)
+     res.render("index");
+   });
+ 
+
   // Route for getting some data about our user to be used client side
   app.get("/api/user_data", (req, res) => {
     if (!req.user) {
@@ -61,9 +69,17 @@ module.exports = function(app) {
       date: req.body.date,
       gift: req.body.gift
     
+    }).then((data)=>{
+      console.log(data.dataValues)
+      res.redirect("/members")
+    }
+    ).catch(err=>{
+      console.log(err)
+      res.redirect("/birthday-input")
     })
-
+     
   });
+
 
   app.post("/api/birthday/:month", (req, res) => {
     db.birthday.findAll({
