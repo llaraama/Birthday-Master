@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-  <link href="stylesheets/style.css" rel="stylesheet">
+  <link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -56,16 +56,24 @@
 <div class="row">
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
-        <div class="card border-info mb-3 hide">
-            <div class="card-header" id="monthTitle"></div>
-            <div class="card-body text-info"></div>
+      {{#if displayBirthdays}}
+        <div class="card border-info mb-3">
+            <div class="card-header" id="monthTitle">{{month}}</div>
+            <div id="bday-card" class="card-body text-info">
+              {{#each data}}
+                {{this.firstname}} {{this.lastname}} 
+                {{this.day}}
+              {{/each}}
+            
+            </div>
           </div>
+          {{/if}}
     </div>
     <div class="col-sm-2"></div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/members.js"></script>
+<script type="text/javascript" src="/js/members.js"></script>
 
 </body>
 
