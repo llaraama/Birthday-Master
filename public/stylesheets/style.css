@@ -7,12 +7,16 @@ form.login {
 
 body {
 background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
-background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+background-image: linear-gradient(to top, #a8edea 0%, #f3e3e8 100%);
 background-attachment: fixed;
 background-repeat: no-repeat;
 font-family: 'Quicksand', sans-serif;
 font-family: 'Roboto Slab', serif;
 opacity: .95;
+background-image: url("../birthday.jpg");
+background-position: center;
+background-size: cover;
+/* background-repeat: no-repeat; */
 /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
 }
 
@@ -118,8 +122,8 @@ button {
     display: inline-block;
     color: #252537;
   
-    width: 280px;
-    height: 50px;
+    /* width: 280px;
+    height: 50px; */
   
     padding: 0 20px;
     background: #fff;
@@ -131,9 +135,9 @@ button {
     cursor: pointer;
     text-align: center;
     transition: all 0.2s linear;
-    
+/*     
     margin: 7% auto;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.05em; */
 }
 /* Submits */
 .submits {
@@ -168,5 +172,58 @@ button:hover {
         transform: translateY(5px);
     }
 }
-
-
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 150px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: rgb(185, 184, 184); /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
