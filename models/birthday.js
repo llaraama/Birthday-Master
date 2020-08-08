@@ -9,6 +9,9 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.STRING,
         allowNull: false,
       },
+      // change variable since it is a key word
+      // play with data type date
+      // change to datatypes.date
       date:{
           type: DataTypes.STRING,
           allowNull: false,

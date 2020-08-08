@@ -2,6 +2,9 @@
 const db = require("../models");
 const passport = require("../config/passport");
 
+// ***added this part ****
+const isAuthenticated = require("../config/middleware/isAuthenticated");
+
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
@@ -36,6 +39,12 @@ module.exports = function(app) {
     res.redirect("/");
   });
 
+  // *****just added
+  app.get("/birthday-input",isAuthenticated,  (req, res) => {
+   console.log(req.user)
+    res.render("index");
+  });
+
   // Route for getting some data about our user to be used client side
   app.get("/api/user_data", (req, res) => {
     if (!req.user) {
@@ -51,7 +60,7 @@ module.exports = function(app) {
     }
   });
 
-
+// ***added new code here
   app.post("/api/birthday", (req, res) => {
    
     db.birthday.create({
@@ -60,8 +69,15 @@ module.exports = function(app) {
       date: req.body.date,
       gift: req.body.gift
     
+    }).then((data)=>{
+      console.log(data.dataValues)
+      res.redirect("/members")
+    }
+    ).catch(err=>{
+      console.log(err)
+      res.redirect("/birthday-input")
     })
-
+     
   });
 
 

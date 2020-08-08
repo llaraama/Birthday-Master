@@ -12,5 +12,6 @@ $(".nav-link").on("click", function(e){
   console.log(this); 
   $("#monthTitle").text($(this).text());
   $(".card").removeClass("hide");
+  
 });
 });
