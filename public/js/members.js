@@ -11,19 +11,19 @@ $(".nav-link").on("click", function(e){
 
   //console.log($(this).text());
   //console.log(this); 
+  $("#bday-card").empty();
   $("#monthTitle").text($(this).text());
   $(".card").removeClass("hide");
+  
+  // $.post(`/api/birthday/${$(this).val()}`).then(data => {
+  //   //console.log(data);
+  // });
 
-  $.post(`/api/birthday/${$(this).val()}`).then(data => {
-    //console.log(data);
-    //console.log(data.birthday);
-    //console.log(data[0].birthday.dataValues.firstname);
-    $(".text-info").append(
-    `<div class=card>
-      <h5>Test</h5>
-    </div>`
-    )
-  });
+  // $.get(`/api/birthday/${$(this).val()}`).then(data => {
+  //   console.log(data);
+  // })
+  location.href = `/api/birthday/${$(this).val()}`
 });
+
 });
 

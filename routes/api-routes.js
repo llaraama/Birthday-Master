@@ -1,8 +1,9 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
-const sequelize = require("sequelize")
+const sequelize = require("sequelize");
 const isAuthenticated = require("../config/middleware/isAuthenticated");
+
 
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
