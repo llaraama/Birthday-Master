@@ -58,13 +58,15 @@
     <div class="col-sm-8">
       {{#if displayBirthdays}}
         <div class="card border-info mb-3">
-            <div class="card-header" id="monthTitle">{{month}}</div>
+            <h5 class="card-header" id="monthTitle">{{month}}</h5>
             <div id="bday-card" class="card-body text-info">
               {{#each data}}
+              <div class="card mb-3" style="max-width: 18rem;">
                 {{this.firstname}} {{this.lastname}} 
-                {{this.day}}
+                <h1 class="card-text">{{this.date}}</h1>
+                <p>Previous Gift: {{this.gift}}</p>
+              </div>
               {{/each}}
-            
             </div>
           </div>
           {{/if}}
