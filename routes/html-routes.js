@@ -63,7 +63,7 @@ module.exports = function(app) {
       12: "December"
     }
     let hbsObj = {
-      data: response.map(bday => {return {firstname: bday.firstname, lastname:bday.lastname, date: bday.date}}),
+      data: response.map(bday => {return {firstname: bday.firstname, lastname:bday.lastname, date: bday.date, gift: bday.gift}}),
       displayBirthdays: response.length ? true: false,
       month: months[req.params.month],
       day: req.params.day
