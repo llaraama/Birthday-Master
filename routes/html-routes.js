@@ -62,8 +62,12 @@ module.exports = function(app) {
       11: "November",
       12: "December"
     }
+
+    console.log("date: "+response[0].date.split("-"));
     let hbsObj = {
-      data: response.map(bday => {return {firstname: bday.firstname, lastname:bday.lastname, date: bday.date, gift: bday.gift}}),
+      data: response.map(bday => {
+        let temp = bday.date.split("-");
+        return {firstname: bday.firstname, lastname:bday.lastname, date: temp[2], gift: bday.gift}}),
       displayBirthdays: response.length ? true: false,
       month: months[req.params.month],
       day: req.params.day
