@@ -3,23 +3,49 @@
 ![badmath](https://img.shields.io/github/languages/top/llaraama/Project-2-)
 
 Application for keeping track of birthdays.
+ 
+ ## Table of Contents:
+  * [Description](#Description)
+ 
+  * [User Story](#User Story)
+  
+  * [Installation](#Installation)
+
+  * [Usage](#Usage)
+  
+  * [Credits](#Credits)
+
+  * [License](#License)
+
+  * [Contributing](#Contributing)
+
+  * [Technology](#Technology)
+
+  * [Questions](#Questions)
+
+## Description:
+Motivation/description:
+
+## User Story:
+User is interested in :
 
 
-1.Description Motivation:
+## Installation:
+Clone this repo to your local machine using https://github.com/llaraama/Project-2-.git
 
-2.User Story User is interested in :
-
-3.Table of Contents Installation Usage Credits License Contributing Technology
-
-4.Installation Clone this repo to your local machine using https://github.com/llaraama/Project-2-.git
-
-5.Usage
+## Usage:
 (will have gif here)
 
-6.Credits Laura Lara: https://github.com/llaraama Sarah Shealy :https://github.com/sarahshea12 Ben Ekis: https://github.com/bsekis
+## Credits:
+Laura Lara: https://github.com/llaraama Sarah Shealy :https://github.com/sarahshea12 Ben Ekis: https://github.com/bsekis
 
-7.License Licensed under the MIT license.
+## License:
+MIT license.
 
-8.Contributing To contribute, follow these steps: Fork this repository. Create a branch: git checkout -b <branch_name>. Add: git add . Make your changes and commit them: git commit -m '<commit_message>' Push to the original branch: git push origin <branch_name> Create the pull request.
+## Contributing
+Fork this repository. Create a branch: git checkout -b <branch_name>. Add: git add . Make your changes and commit them: git commit -m '<commit_message>' Push to the original branch: git push origin <branch_name> Create the pull request.
 
+## Technology
 9.Technology:
+
+
