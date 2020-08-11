@@ -1,5 +1,7 @@
 # Birthday Master
 
+![badmath](https://img.shields.io/github/languages/top/llaraama/Project-2)
+
 Application for keeping track of birthdays.
 
 
