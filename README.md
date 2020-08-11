@@ -35,9 +35,9 @@ Clone this repo to your local machine using https://github.com/llaraama/Project-
 (will have gif here)
 
 ## Credits:
-* [Laura Lara: https://github.com/llaraama]
-* [Sarah Shealy :https://github.com/sarahshea12 ]
-* [Ben Ekis: https://github.com/bsekis]
+* Laura Lara: https://github.com/llaraama
+* Sarah Shealy :https://github.com/sarahshea12 
+* Ben Ekis: https://github.com/bsekis
 
 ## License:
 MIT license.
