@@ -7,7 +7,7 @@ Application for keeping track of birthdays.
  ## Table of Contents:
   * [Description](#Description)
  
-  * [User-Story](#User-Story)
+  * [User Story](#User-Story)
   
   * [Installation](#Installation)
 
@@ -21,12 +21,10 @@ Application for keeping track of birthdays.
 
   * [Technology](#Technology)
 
-  * [Questions](#Questions)
-
 ## Description:
 Motivation/description:
 
-## User-Story:
+## User Story:
 User is interested in :
 
 
