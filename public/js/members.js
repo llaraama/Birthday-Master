@@ -1,3 +1,4 @@
+
 $(document).ready(() => {
   // This file just does a GET request to figure out which user is logged in
   // and updates the HTML on the page
@@ -6,24 +7,14 @@ $(document).ready(() => {
   });
 
   
-$(".nav-link").on("click", function(e){
-  e.preventDefault();
-
-  //console.log($(this).text());
-  //console.log(this); 
-  $("#bday-card").empty();
-  $("#monthTitle").text($(this).text());
-  $(".card").removeClass("hide");
-  
-  // $.post(`/api/birthday/${$(this).val()}`).then(data => {
-  //   //console.log(data);
-  // });
-
-  // $.get(`/api/birthday/${$(this).val()}`).then(data => {
-  //   console.log(data);
-  // })
-  location.href = `/api/birthday/${$(this).val()}`
-});
+  $(".nav-link").on("click", function(e){
+    e.preventDefault();
+    $("#bday-card").empty();
+    $("#monthTitle").text($(this).text());
+    $(".card").removeClass("hide");
+    
+    location.href = `/api/birthday/${$(this).val()}`
+  });
 
 });
 

@@ -45,6 +45,18 @@ module.exports = function(app) {
       where: sequelize.where(sequelize.fn("month", sequelize.col("date")), req.params.month)
       
     }).then(response => {
+      // console.log(response)
+
+      // if(response.length<1){
+      //   let hbsObj={
+      //     // displayBirthdays:false
+       
+      //   }
+      //   console.log("undefined")
+      //   res.render("members", hbsObj);
+      // }
+      
+      // console.log(response[0].dataValues)
       // console.log(response[0].firstname);
     // var bdays = [];
     // bdays.push(response);
@@ -63,6 +75,7 @@ module.exports = function(app) {
       12: "December"
     }
 
+
     console.log("date: "+response[0].date.split("-"));
     let hbsObj = {
       data: response.map(bday => {
@@ -74,7 +87,6 @@ module.exports = function(app) {
     }
     console.log(hbsObj)
     res.render("members", hbsObj);
-    }
-    ) 
+    }); 
   });
 };

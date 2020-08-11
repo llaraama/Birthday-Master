@@ -1,4 +1,12 @@
-INSERT INTO birthdays (firstname,lastname,date,gift) VALUES ('Sarah','Shealy'.'1997-12-04','purse');
-INSERT INTO birthdays (firstname,lastname,date,gift) VALUES ('Laura','Lara','1995-02-23','tv');
-
-
+INSERT INTO birthdays (firstname,lastname,date,gift) VALUES ('Sarah','Shealy','1997-12-04','Purse');
+INSERT INTO birthdays (firstname,lastname,date,gift) VALUES ('Laura','Lara','1995-02-23','Tv');
+INSERT INTO birthdays (firstname,lastname,date,gift) VALUES ('Josh','Smith','1997-01-10','Watch');
+INSERT INTO birthdays (firstname,lastname,date,gift) VALUES ('Ben','Brown','1995-03-15','Suit Case');
+INSERT INTO birthdays (firstname,lastname,date,gift) VALUES ('Sarah','Bell','1990-04-07','Wallet');
+INSERT INTO birthdays (firstname,lastname,date,gift) VALUES ('Will','Hunter','1992-05-15','Tools');
+INSERT INTO birthdays (firstname,lastname,date,gift) VALUES ('Merecedes','Shealy','1996-06-25','Makeup');
+INSERT INTO birthdays (firstname,lastname,date,gift) VALUES ('Seth','Davis','1995-07-19','Airpods');
+INSERT INTO birthdays (firstname,lastname,date,gift) VALUES ('Caroline','Black','1997-08-14','Apple Watch');
+INSERT INTO birthdays (firstname,lastname,date,gift) VALUES ('Jared','wyatt','2017-09-17','Legos');
+INSERT INTO birthdays (firstname,lastname,date,gift) VALUES ('Samantha','Gray','2015-10-11','Doll House');
+INSERT INTO birthdays (firstname,lastname,date,gift) VALUES ('Hunter','Garcia','2010-11-02','Electric scooter');
