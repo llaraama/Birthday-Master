@@ -8,16 +8,17 @@ form.login {
 }
 
 body {
-background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
-background-image: linear-gradient(to top, #67eedc 0%, #fed6e3 100%);
+/* background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+background-image: linear-gradient(to top, #67eedc 0%, #fed6e3 100%); */
 background-attachment: fixed;
 background-repeat: no-repeat;
 font-family: 'Quicksand', sans-serif;
 font-family: 'Roboto Slab', serif;
 opacity: .95;
-background-image: url("../birthday.jpg");
+background-image: url("../happybirthday.jpg");
 background-position: center;
 background-size: cover;
+font-family: 'Quicksand', sans-serif;
 /* background-repeat: no-repeat; */
 /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
 }
@@ -30,8 +31,12 @@ form {
     margin: 2% auto;
     box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
     padding: 2%;
+    
+}
+.info{
     background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
 }
+
 /* form Container */
 form .con {
     display: -webkit-flex;
@@ -194,11 +199,31 @@ button:hover {
      margin-left: 50%;
      font-size: 150%;
      color:black;
+     background-color: white;
+     
 
  }
  .logout{
      margin-left: 100%;
      color:black;
      font-size: 150%;
+     background-color:white;
     
  }
+
+ .navbar{
+    background-image: url("../confetti.jpg");
+
+ }
+.bootstrap-iso{
+    margin-left: 35%;  
+    width: 0%;
+}
+.title{
+    text-align: center;
+}
+h5{
+    color: black;
+    background-color: white;
+}
+
