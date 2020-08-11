@@ -42,7 +42,7 @@ module.exports = function(app) {
   app.get("/birthday-input",isAuthenticated,  (req, res) => {
     console.log(req.user)
      res.render("index");
-   });
+  });
  
 
   // Route for getting some data about our user to be used client side

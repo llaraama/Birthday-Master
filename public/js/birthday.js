@@ -2,25 +2,22 @@
 
 $(document).ready(() => {
 
-    console.log("on birthday page")
-
-const birthdayForm= $("form.info");
-const firstNameInput= $("input#fname");
-const lastNameInput=$("input#lname");
-const dateInput=$("input#date");
-const giftInput=$("input#gift");
+    const birthdayForm= $("form.info");
+    const firstNameInput= $("input#fname");
+    const lastNameInput=$("input#lname");
+    const dateInput=$("input#date");
+    const giftInput=$("input#gift");
 
 
-birthdayForm.on("submit",event=>{
-    event.preventDefault();
-    const birthdayData={
-        firstname: firstNameInput.val().trim(),
-        lastname: lastNameInput.val().trim(),
-        date:dateInput.val().trim(),
-        gift:giftInput.val().trim()
+    birthdayForm.on("submit",event=>{
+        event.preventDefault();
+        const birthdayData={
+            firstname: firstNameInput.val().trim(),
+            lastname: lastNameInput.val().trim(),
+            date:dateInput.val().trim(),
+            gift:giftInput.val().trim()
     };
-    console.log("it is here!")
-    // console.log(birthdayData)
+   
     if (!birthdayData.firstname || !birthdayData.lastname || !birthdayData.date || !birthdayData.gift) {
         return;
       }
@@ -31,10 +28,10 @@ birthdayForm.on("submit",event=>{
     function addBirthday(firstname,lastname,date,gift) {
     
         $.post("/api/birthday", {
-            firstname:firstname,
-            lastname:lastname,
+            firstname:firstname.charAt(0).toUpperCase() + firstname.slice(1),
+            lastname:lastname.charAt(0).toUpperCase() + lastname.slice(1),
             date: date,
-            gift: gift
+            gift: gift.charAt(0).toUpperCase() + gift.slice(1)
         
         },function(){
             console.log("sent")
@@ -42,14 +39,6 @@ birthdayForm.on("submit",event=>{
                 window.location.replace("/");
                 // If there's an error, log the error
         })
-        //   .then(() => {
-        //     // ****  update the url here when the calender section is done
-        //     window.location.replace("/");
-        //     // If there's an error, log the error
-        //   })
-        //   .catch(err => {
-        //     console.log(err);
-        //   });
       }
 
 });
