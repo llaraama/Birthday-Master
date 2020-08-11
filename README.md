@@ -7,7 +7,7 @@ Application for keeping track of birthdays.
  ## Table of Contents:
   * [Description](#Description)
  
-  * [User Story](#User Story)
+  * [User-Story](#User-Story)
   
   * [Installation](#Installation)
 
@@ -26,7 +26,7 @@ Application for keeping track of birthdays.
 ## Description:
 Motivation/description:
 
-## User Story:
+## User-Story:
 User is interested in :
 
 
@@ -46,6 +46,6 @@ MIT license.
 Fork this repository. Create a branch: git checkout -b <branch_name>. Add: git add . Make your changes and commit them: git commit -m '<commit_message>' Push to the original branch: git push origin <branch_name> Create the pull request.
 
 ## Technology
-9.Technology:
+MIT License
 
 
