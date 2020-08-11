@@ -56,14 +56,15 @@
     {{!-- <div class="col-sm-2"></div> --}}
     <div class="offset-md-2 col-sm-8">
       {{#if displayBirthdays}}
-        <div class="card border-info mb-3">
+        <div class="card border-primary mb-3">
             <h5 class="card-header" id="monthTitle">{{month}}</h5>
           
-            <div id="bday-card" class="card-body text-info row">
+            <div id="bday-card" class="card-body text-primary row">
               {{#each data}}
-              <div class="card mb-3 col-md-4 col-sm-6 col-xs-12" style="max-width: 18rem;">
+              <div class="card text-center mb-3 col-md-4 col-sm-6 col-xs-12" style="max-width: 18rem;">
                 {{this.firstname}} {{this.lastname}} 
-                <h1 class="card-text">{{this.date}}</h1>
+                 <hr class="my-2">
+                <h1 class="card-text" style="font-size: 550%">{{this.date}}</h1>
                 <p>Previous Gift: {{this.gift}}</p>
               </div>
               {{/each}}
