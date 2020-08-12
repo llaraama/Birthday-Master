@@ -22,7 +22,17 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: true,
     }
 
+   
+  
     });
+    Birthday.associate = function (models) {
+   
+      Birthday.belongsTo(models.User, {
+          foreignKey: {
+            allowNull: false
+          }
+        });
+  };
   
     return Birthday;
   };

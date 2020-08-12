@@ -67,7 +67,8 @@ module.exports = function(app) {
       firstname:req.body.firstname,
       lastname:req.body.lastname,
       date: req.body.date,
-      gift: req.body.gift
+      gift: req.body.gift,
+      UserId: req.user.id
     
     }).then((data)=>{
       console.log(data.dataValues)

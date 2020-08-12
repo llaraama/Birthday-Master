@@ -32,6 +32,7 @@ $(document).ready(() => {
             lastname:lastname.charAt(0).toUpperCase() + lastname.slice(1),
             date: date,
             gift: gift.charAt(0).toUpperCase() + gift.slice(1)
+            
         
         },function(){
             console.log("sent")

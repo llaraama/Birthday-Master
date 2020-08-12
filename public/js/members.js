@@ -6,7 +6,6 @@ $(document).ready(() => {
     $(".member-name").text(data.email);
   });
 
-  
   $(".nav-link").on("click", function(e){
     e.preventDefault();
     $("#bday-card").empty();
