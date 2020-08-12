@@ -71,8 +71,8 @@ module.exports = function(app) {
       UserId: req.user.id
     
     }).then((data)=>{
-      console.log(data.dataValues)
-      // res.redirect("/members")
+      // console.log(data.dataValues)
+      res.end()
     }
     ).catch(err=>{
       console.log(err)
