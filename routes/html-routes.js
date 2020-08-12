@@ -61,18 +61,20 @@ module.exports = function(app) {
       12: "December"
     }
 
-
-    console.log("date: "+response[0].date.split("-"));
+if(response.length) {
+  console.log("date: "+response[0].date)
     let hbsObj = {
       data: response.map(bday => {
-        let temp = bday.date.split("-");
-        return {firstname: bday.firstname, lastname:bday.lastname, date: temp[2], gift: bday.gift}}),
+        let temp = bday.date.getDay();
+        return {firstname: bday.firstname, lastname:bday.lastname, date: temp, gift: bday.gift}}),
       displayBirthdays: response.length ? true: false,
       month: months[req.params.month],
       day: req.params.day
     }
     console.log(hbsObj)
     res.render("members", hbsObj);
+}
+    
     }); 
   });
 };
