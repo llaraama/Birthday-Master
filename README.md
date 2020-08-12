@@ -41,8 +41,8 @@ Our motivation was to help the users keep track of birthdays of loved ones and f
 Clone this repo to your local machine using https://github.com/llaraama/Project-2-.git
 
 ## Usage:
+![image](https://user-images.githubusercontent.com/62354759/89972659-515de080-dc2c-11ea-8a0f-16f94b03d7ac.png)
 
-![image](https://user-images.githubusercontent.com/62354759/89971903-7a7d7180-dc2a-11ea-9dc0-4ba7a818b976.png)
 
 ## Credits:
 * Laura Lara: https://github.com/llaraama
