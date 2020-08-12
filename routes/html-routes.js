@@ -45,21 +45,7 @@ module.exports = function(app) {
       where: sequelize.where(sequelize.fn("month", sequelize.col("date")), req.params.month)
       
     }).then(response => {
-      // console.log(response)
-
-      // if(response.length<1){
-      //   let hbsObj={
-      //     // displayBirthdays:false
-       
-      //   }
-      //   console.log("undefined")
-      //   res.render("members", hbsObj);
-      // }
       
-      // console.log(response[0].dataValues)
-      // console.log(response[0].firstname);
-    // var bdays = [];
-    // bdays.push(response);
     let months = {
       1: "January",
       2: "February",
