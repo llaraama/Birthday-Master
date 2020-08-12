@@ -24,9 +24,9 @@ Application for keeping track of birthdays.
 
 ## Description:
 Our motivation was to help the users keep track of birthdays of loved ones and facilitate the process of coming up with a gift idea by looking at gifts given to them the previous year
-Allows the user to input and save birthdays in a 12-month calendar displayed by month
-Allows the user to view birthdays and names
-Allows the user to track gifts from the previous year
+* Allows the user to input and save birthdays in a 12-month calendar displayed by month
+* Allows the user to view birthdays and names
+* Allows the user to track gifts from the previous year
 
 
 ## User Story:
