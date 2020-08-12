@@ -37,7 +37,7 @@ $(document).ready(() => {
         },function(){
             console.log("sent")
                 // ****  update the url here when the calender section is done
-                window.location.href("/members")
+                window.location.href="/members"
                 // If there's an error, log the error
         })
       }
