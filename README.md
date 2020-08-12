@@ -23,17 +23,26 @@ Application for keeping track of birthdays.
   * [Technology](#Technology)
 
 ## Description:
-Motivation/description:
+Our motivation was to help the users keep track of birthdays of loved ones and facilitate the process of coming up with a gift idea by looking at gifts given to them the previous year
+Allows the user to input and save birthdays in a 12-month calendar displayed by month
+Allows the user to view birthdays and names
+Allows the user to track gifts from the previous year
+
 
 ## User Story:
-User is interested in :
+* User is interested in keeping track of important birthdays 
+* User is mindful of giving their loved ones a unique gift each year
+* User wants a clean responsive app to display the information
+“As a kind and thoughtful human being, I want to keep track of when my friends and family members birthdays are. As well as what gifts I’ve given them in previous years. It is important to me to have all this information in one location in an easy to use, well displayed application” 
+
 
 
 ## Installation:
 Clone this repo to your local machine using https://github.com/llaraama/Project-2-.git
 
 ## Usage:
-(will have gif here)
+
+![image](https://user-images.githubusercontent.com/62354759/89971903-7a7d7180-dc2a-11ea-9dc0-4ba7a818b976.png)
 
 ## Credits:
 * Laura Lara: https://github.com/llaraama
@@ -47,6 +56,7 @@ MIT license.
 Fork this repository. Create a branch: git checkout -b <branch_name>. Add: git add . Make your changes and commit them: git commit -m '<commit_message>' Push to the original branch: git push origin <branch_name> Create the pull request.
 
 ## Technology:
+HTML,jQuery,Javascript,CSS,Bootstrap,MySQL2,Sequelize,Handlebars,Express,bcrypt.js,Passport,Materialize
 
 
 
