@@ -72,7 +72,7 @@ module.exports = function(app) {
     
     }).then((data)=>{
       console.log(data.dataValues)
-     
+      // res.redirect("/members")
     }
     ).catch(err=>{
       console.log(err)
