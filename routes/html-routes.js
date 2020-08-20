@@ -40,9 +40,13 @@ module.exports = function(app) {
   });
 
   app.get("/api/birthday/:month", (req, res) => {
+    console.log("this is the user info")
+    console.log(req.user)
+
     db.birthday.findAll({
 
       where: sequelize.where(sequelize.fn("month", sequelize.col("date")), req.params.month)
+      // where: {sequelize.where(sequelize.fn("month", sequelize.col("date")), req.params.month),UserId:req.user.id}
       
     }).then(response => {
       
