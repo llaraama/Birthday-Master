@@ -56,7 +56,7 @@ MIT license.
 Fork this repository. Create a branch: git checkout -b <branch_name>. Add: git add . Make your changes and commit them: git commit -m '<commit_message>' Push to the original branch: git push origin <branch_name> Create the pull request.
 
 ## Technology:
-HTML,jQuery,Javascript,CSS,Bootstrap,MySQL2,Sequelize,Handlebars,Express,bcrypt.js,Passport,Materialize
+HTML, jQuery, Javascript, CSS, Bootstrap, MySQL2, Sequelize, Handlebars, Express, bcrypt.js, and Passport.js
 
 
 
