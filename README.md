@@ -41,7 +41,7 @@ Our motivation was to help the users keep track of birthdays of loved ones and f
 Clone this repo to your local machine using https://github.com/llaraama/Project-2-.git
 
 ## Usage:
-![gif](https://user-images.githubusercontent.com/62354759/89972989-36d83700-dc2d-11ea-8916-f23e56f154c4.png)
+![Passport Authentication](https://user-images.githubusercontent.com/62354759/94469583-5bb04b80-0194-11eb-85b2-005ab9741ee6.gif)
 
 
 ## Credits:
